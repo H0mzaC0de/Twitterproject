@@ -9,7 +9,7 @@ function validateAge($birthday)
     }
     return true;
 }
-$conn = mysqli_connect('localhost', 'root', '', 'twitter') or die(mysqli_error($conn));
+$conn = mysqli_connect('test', 'test', '', 'test') or die(mysqli_error($conn));
 if ($conn) {
     if (isset($_POST['submit'])) {
         if (!empty($_POST['name']) and !empty($_POST['tel']) and !empty($_POST['email']) and !empty($_POST['password']) and !empty($_POST['passwordCheck']) and !empty($_POST['ddn']) and !empty($_FILES['image'])) {
