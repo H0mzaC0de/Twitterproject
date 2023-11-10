@@ -6,7 +6,7 @@ session_unset();
 header('location:login.php');
 }
 ;
-$conn = mysqli_connect('localhost', 'root', '', 'twitter') or die(mysqli_error($conn));
+$conn = mysqli_connect('test', 'test', 'test', 'test') or die(mysqli_error($conn));
 if ($conn) {
     if (isset($_POST['submit'])) {
         if (!empty($_POST['email']) and !empty($_POST['password'])) {
