@@ -1,6 +1,6 @@
 <?php
 session_start();
-$conn=mysqli_connect('localhost','root','','twitter') or die(mysqli_error($conn));
+$conn=mysqli_connect('test','test','test','test') or die(mysqli_error($conn));
 if($conn){
     $ok=0;
     if(!empty($_POST['commentText'])){
