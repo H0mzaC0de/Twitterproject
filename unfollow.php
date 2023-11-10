@@ -1,6 +1,6 @@
 <?php 
 session_start();
-$conn=mysqli_connect('localhost','root','','twitter') or die(mysqli_error($conn));
+$conn=mysqli_connect('test','test','test','test') or die(mysqli_error($conn));
 if($conn){
     if(!empty($_POST['idUser']) and !empty($_POST['hnaya'])){
         $idUser=$_POST['idUser'];
